@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p class="para">First paragraph</p>
+        <p class="para">Second paragraph</p>
+        <p class="para">Third paragraph</p>
+        <p class="para">Fourth paragraph</p>
+        <script>
+            const paras = document.getElementsByClassName("para")
+            for (let i=0; i<paras.length; i++) {
+                paras[i].innerHTML = "Para No. " + (i + 1)
+            }
+        </script>
+    </body>
+</html>

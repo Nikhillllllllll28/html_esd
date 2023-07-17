@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p>first para</p>
+        <p class="para">second para</p>
+        <p class="para">third para</p>
+        <p class="para2">fourth para</p>
+    <div class="para">
+     dummy
+    </div>
+    <script>
+        const paras = document.querySelectorAll("p.para");
+        for(let i=0; i<paras.length; i++)
+        paras[i].innerHTML= "replaced text";
+    </script>
+    </body>
+</html>

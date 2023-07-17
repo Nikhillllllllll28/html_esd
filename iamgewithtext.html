@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Text Image</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function showImage() {
+      var image = document.getElementById("myImage");
+      image.classList.remove("hidden");
+    }
+  </script>
+</head>
+<body>
+  <p>Click on the text to reveal the image:</p>
+  <p onclick="showImage()">Click Me!</p>
+  <img id="myImage" src="path/to/your/image.jpg" class="hidden" alt="Image" width="200" height="200">
+</body>
+</html>
